@@ -1,0 +1,6 @@
+<%= form_for @instagram do |f| %>
+    <%= f.text_field :name, :size => 50 %> 
+
+    <%= f.file_field :image %>
+    <%= f.submit "編集する" %>
+  <% end %>

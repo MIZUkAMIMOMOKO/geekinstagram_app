@@ -1,0 +1,36 @@
+ ドライブ C のボリューム ラベルは Local Disk です
+ ボリューム シリアル番号は 3A60-FB39 です
+
+ C:\Users\MIZUKAMI MOMOKO\desktop\geekinstagram のディレクトリ
+
+2022/12/07  11:52    <DIR>          .
+2022/11/16  12:41    <DIR>          ..
+2022/11/16  12:43                 9 .browserslistrc
+2022/11/22  19:10               107 .env
+2022/11/16  12:41               327 .gitattributes
+2022/11/22  19:11               845 .gitignore
+2022/11/16  12:41                11 .ruby-version
+2022/11/22  19:01    <DIR>          app
+2022/11/16  12:43             1,897 babel.config.js
+2022/11/16  12:43    <DIR>          bin
+2022/11/22  19:12    <DIR>          config
+2022/11/16  12:41               160 config.ru
+2022/12/07  08:59    <DIR>          db
+2022/11/22  19:04             2,133 Gemfile
+2022/11/22  19:04             6,701 Gemfile.lock
+2022/11/16  12:41    <DIR>          lib
+2022/11/16  12:43    <DIR>          log
+2022/12/07  11:52                 0 log.txt
+2022/11/16  13:27    <DIR>          node_modules
+2022/11/16  12:44               370 package.json
+2022/11/16  12:43               224 postcss.config.js
+2022/11/22  19:14    <DIR>          public
+2022/11/16  12:41               227 Rakefile
+2022/11/16  12:41               374 README.md
+2022/11/16  12:41    <DIR>          storage
+2022/11/16  12:41    <DIR>          test
+2022/12/05  10:28    <DIR>          tmp
+2022/11/16  12:41    <DIR>          vendor
+2022/11/16  12:44           338,273 yarn.lock
+              15 個のファイル             351,658 バイト
+              14 個のディレクトリ  53,552,316,416 バイトの空き領域

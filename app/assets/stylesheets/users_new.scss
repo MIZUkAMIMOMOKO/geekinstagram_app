@@ -1,0 +1,103 @@
+.frame{
+    width: 80%; 
+    margin: 30px auto; 
+    max-width: 600px; 
+}
+
+img{
+    width: 80px; 
+    height: auto; 
+}
+
+.box0{
+    text-align: center; 
+}
+
+.h3{
+    display: block; 
+    font-size: 14px;
+    padding: 5px 10px; 
+}
+
+
+.box1{
+    width: 100%;
+    height: 60px; 
+    margin: 15px 0px; 
+    background-color: #eee; 
+    border-bottom: 2px solid #c2c2c2; 
+}
+.h2{
+    font-size: 18px; 
+    padding: 0 0 7px 10px; 
+    width: 100%; 
+    background-color: #eee; 
+    border: none; 
+    outline: none; 
+    border-bottom: 2px solid #c2c2c2; 
+    box-sizing: border-box; 
+}
+
+.h2:focus{
+    border-bottom: 2px solid #1B73BA; 
+}
+
+.field_2{
+    width: 100%;
+    height: 60px; 
+    margin: 15px 0px; 
+    background-color: #eee; 
+    border-bottom: 2px solid #c2c2c2; 
+}
+.h2{
+    display: block; 
+    font-size: 13px; 
+    padding: 5px 10px; 
+}
+
+.h2{
+    font-size: 18px; 
+    padding: 2px 0 7px 10px; 
+    width: 100%; 
+    background-color: #eee; 
+    border: none; 
+    outline: none; 
+    border-bottom: 2px solid #c2c2c2; 
+    box-sizing: border-box; 
+}
+
+.h2:focus{
+    border-bottom: 2px solid #1B73BA; 
+}
+
+
+.button[type="submit"]{
+    position: relative; 
+    width:100%; 
+    height:50px; 
+    color:#fff; 
+    border:none; 
+    -webkit-border-radius: 25px;
+       -moz-border-radius: 25px;
+            border-radius: 25px; 
+    background:#1B73BA; 
+    display: block; 
+    -webkit-appearance: none;
+    outline: 0; 
+    cursor: pointer;
+}
+.button[type="submit"]:hover{
+    opacity: 0.8; 
+}
+
+
+a {
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline;
+}
+
+p {
+    text-align: center; 
+}

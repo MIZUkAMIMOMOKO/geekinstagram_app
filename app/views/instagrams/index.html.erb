@@ -1,0 +1,39 @@
+<h1>GeekInstagram</h1>
+<h3>投稿一覧</h3>
+<h3>投稿を検索</h3>
+    <%= form_tag({controller:"instagrams",action:"index"}, method: :get) do %>
+    <%= text_field_tag :search %>
+    <%= submit_tag '検索する'  %>
+<% end %>
+<%= link_to "新規投稿へ", new_instagram_path %>
+<%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
+
+<% if user_signed_in? %>
+    <%= link_to "マイページへ", user_path(current_user.id) %>
+<% end %>
+<div class="instagrams-container">
+    <% @instagrams.each do |t| %>
+    <div class="instagram">
+        <%= t.created_at %>
+        <%= t.user.email %>
+        <%= image_tag t.image_url, size: "250x200" if t.image? %>
+        <%= link_to "詳細へ", instagram_path(t.id) %>
+<% if user_signed_in? %>
+    <% if current_user.already_liked?(t) %>
+        <%= link_to instagram_like_path(id: t.id, instagram_id: t.id), method: :delete do %>
+            <i class="fas fa-heart"></i><%= t.likes.count %>
+        <% end %>
+    <% else %>
+        <%= link_to instagram_likes_path(id: t.id, instagram_id: t.id), method: :post do %>
+            <i class="far fa-heart"></i><%= t.likes.count %>
+        <% end %>
+    <% end %>
+<% else %>
+    <i class="far fa-heart"></i><%= t.likes.count %>
+<% end %>
+    <% if user_signed_in? && current_user.id == t.user_id %>             
+        <%= link_to "編集する", edit_instagram_path(t.id) %>
+        <%= button_to "削除する", instagram_path(t.id), method: :delete %>
+    <% end %> 
+</div>
+<% end %> 

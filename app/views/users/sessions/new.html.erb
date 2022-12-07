@@ -1,0 +1,36 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ログイン</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/users_new.scss">
+  </head>
+
+<body>
+<div class="frame">
+  <div class="box0">
+    <h3>GeekInstagramにログイン</h3>
+  </div>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="box1">
+      <label for="form__input--email">メールアドレス</label>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="box1">
+      <label for="form__input--password">パスワード</label>
+      <%= f.password_field :password, autocomplete: "off" %>
+    </div>
+  
+
+
+      <input type="submit" value"log in" class="button">
+    <% end %>
+  <p>
+    <br>
+    <a href="/users/password/new">パスワードをお忘れですか？</a>
+    <a href="/users/sign_up">アカウント作成</a>
+  </p>
+</div>
+</body>
+</html>
